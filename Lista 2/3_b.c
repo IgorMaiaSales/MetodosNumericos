@@ -6,8 +6,8 @@
     seja menor do que 𝜀𝑠 = 2%. Faça também uma verificação de erro substituindo 
     sua resposta final na equação original.
 
-Resposta: Raiz = 0.757813
-          Erro = 0.252137
+Resposta: Raiz = 0.921875
+          Erro = 0.013277
 
 */
 
@@ -48,7 +48,7 @@ int main(){
             xu=xr;
             fxu=fxr;
             xr = (float)((xl+xu)/2);
-            fxr = 5*pow(xr,3)-5*pow(xr,2)+6*xr-2;
+            fxr = pow(xr, 3) - sin(xr);
             erro = fabs((float)((xr-xra)/xr));
 
         }else{
@@ -56,7 +56,7 @@ int main(){
             xl=xr;
             fxl=fxr;
             xr = (float)((xl+xu)/2);
-            fxr = 5*pow(xr,3)-5*pow(xr,2)+6*xr-2;
+            fxr = pow(xr, 3) - sin(xr);
             erro = fabs((float)((xr-xra)/xr));
 
         }
@@ -66,8 +66,8 @@ int main(){
 
     printf("Valor estimado, com %d iteracoes da raiz: %f\n",nit,xr);
 
-    fx = pow(0.757813, 3) - sin(0.757813);
-    printf("Substituindo o resultado na equacao original: f(0.757813) = %f", fx);
+    fx = pow(0.921875, 3) - sin(0.921875);
+    printf("Substituindo o resultado na equacao original: f(0.921875) = %f", fx);
 
     return(0);
     
