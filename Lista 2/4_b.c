@@ -6,6 +6,7 @@
     em (a). Compare os erros relativos aproximados ao final das iterações entre os dois métodos.
 
 Resposta: Raiz = 1.062500
+          Erro = 0.044137
 
 */
 

@@ -5,6 +5,7 @@
 (a)  usando três iterações do método da bissecção, com aproximações iniciais 𝑥𝑙 = 0,5 e 𝑥𝑢 = 2
 
 Resposta: Raiz = 1.062500
+          Erro = 0.176471
 
 */
 
